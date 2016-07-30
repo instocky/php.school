@@ -1,0 +1,36 @@
+body {
+  font-size: 18px;
+}
+.container {
+  width: 700px;
+  background-color: #eee;
+  margin: 20px auto;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+h1 {
+  color: orange;
+  text-align: center;
+
+}
+
+.titletable {
+  font-weight: bold;
+  color: blue;
+  background-color: #ddd;
+  text-transform: uppercase;
+
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, tr {
+  width: 300px;
+  text-align: center;
+}
+
+.first .last {
+  width: 50px;
+}
