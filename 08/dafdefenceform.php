@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!-- https://www.youtube.com/watch?v=WtiWIzYgRrA&list=PLoonZ8wII66jVNtDG-2b1KipT1cpSK57O&index=5 -->
+<!-- встроенные функции работы с защитой полей от инъекций -->
   <head>
     <link href="style.css" rel="stylesheet">
     <meta charset="utf-8">
