@@ -12,9 +12,11 @@ function dConjunction($a, $b) {
 }
 
 // функция xor
-function xConjunction($a, $b) {
-  $c = $a xor $b;
-  return $c;
+function xtion($a, $b) {
+  if($a xor $b) {
+    return 1;
+  }
+  return 0;
 }
 
  ?>
@@ -93,24 +95,23 @@ function xConjunction($a, $b) {
       <tr>
         <td>0</td>
         <td>0</td>
-        <td><?php echo xConjunction(0, 0); ?></td>
+        <td><?php echo xtion(0, 0); ?></td>
       </tr>
       <tr>
         <td>0</td>
         <td>1</td>
-        <td><?php echo xConjunction(0, 1); ?></td>
+        <td><?php echo xtion(0, 1); ?></td>
       </tr>
       <tr>
         <td>1</td>
         <td>0</td>
-        <td><?php echo xConjunction(1, 0); ?></td>
+        <td><?php echo xtion(1, 0); ?></td>
       </tr>
       <tr>
         <td>1</td>
         <td>1</td>
-        <td><?php echo xConjunction(1, 1); ?></td>
+        <td><?php echo xtion(1, 1); ?></td>
       </tr>
     </table>
-    <?php echo "0 or 1"; ?>
   </body>
 </html>
