@@ -1,0 +1,15 @@
+implode // помещает строку в массив с разделителем(если нет разделителя он пустой) разделитель первый аргумент;
+http://php.net/manual/ru/function.implode.php
+
+while // простейший цикл=выполняется пока условие истинно
+http://php.net/manual/ru/control-structures.while.php
+
+
+file_put_contents(ПУТЬКФАЙЛУ, $string) // пишет строку в файл, если файл не существует будет создан, если существует - перезаписан
+http://php.net/manual/ru/function.file-put-contents.php
+
+file_get_content() // получает содержимое файла(аргумент=ПУТЬКФАЙЛУ), если указать чужой адрес = получает страницу)
+http://php.net/manual/ru/function.file-get-contents.php
+
+file() // читает содержимое файла и помещает его в массив(каждая строка=элемент массива)
+http://php.net/manual/ru/function.file.php
