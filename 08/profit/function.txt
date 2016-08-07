@@ -1,4 +1,4 @@
-implode // помещает строку в массив с разделителем(если нет разделителя он пустой) разделитель первый аргумент;
+implode //объединяет элементы массива в строку с разделителем(если нет разделителя он пустой) разделитель первый аргумент;
 http://php.net/manual/ru/function.implode.php
 
 explode // обратная implode = помещает строку в массив
@@ -8,7 +8,7 @@ http://php.net/manual/ru/control-structures.while.php
 
 
 file_put_contents(ПУТЬКФАЙЛУ, $string, FILE_APPEND)
-// пишет строку в файл, если файл не существует будет создан, если существует - перезаписан 
+// пишет строку в файл, если файл не существует будет создан, если существует - перезаписан
 // есть флаг FILE_APPEND просто дописывет в конец
 http://php.net/manual/ru/function.file-put-contents.php
 
@@ -24,3 +24,12 @@ http://php.net/manual/ru/function.move-uploaded-file.php
 
 header('location: /08/guestbook/index.php'); // направление на другую страницу
 http://cannot-modify-header-information.ru/   // не должно быть выводов на странице и только код PHP
+
+switch // аналог функции if
+// сравнивается аргумент с case 1.2.3...5 если да выполняется и прерывается break
+http://php.net/manual/ru/control-structures.switch.php
+
+include // подключение другого файла(функции данные и прочее)
+http://php.net/manual/ru/function.include.php
+
+похожие функции include_once require require_once
