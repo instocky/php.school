@@ -41,3 +41,6 @@ __consructor // магический метод выполняется при с
 
 simplexml_load_file // превращает xml файл в объект
 http://php.net/manual/ru/function.simplexml-load-file.php
+
+move_uploaded_file($_FILES['myimg']['tmp_name'],ПОЛНЫЙПУТЬНОВОЕИМЯНАСЕРВЕРЕ); // загрузка из временного хранилища на сервер
+http://php.net/manual/ru/function.move-uploaded-file.php
