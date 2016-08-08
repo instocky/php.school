@@ -1,32 +1,25 @@
-<meta charset="utf-8">
 <?php
-// include __DIR__ . '/config/db.txt';
-// $arr = file(__DIR__ . '/config/db.txt');
-$header = file_get_contents(__DIR__ . '/template/header.tpl');
-$footer = file_get_contents(__DIR__ . '/template/footer.tpl');
 
 class Page {
-  public $header; // свойство класса эквивалент переменной
-  public $footer;
-  public $article = 'article';
-  public $color = 'red';
+  private $header = 'header_htmlcode'; // свойство класса эквивалент переменной
+  private $footer = 'footer_htmlcode';
+  private $article = 'article_htmlcode';
 
   public function getArticle()
   {
     return $this->article;
   }
 
-  public function changeColor($newcolor)
+    public function getPage()
   {
-    return $this->color = $newcolor;
+    $this->header = __DIR__ . '/template/header.tpl';
+    $this->footer = __DIR__ . '/template/footer.tpl';
+    $footer = file_get_contents($this->footer);
+    $header = file_get_contents($this->header);
+    return $header . $this->article . $footer;
   }
 }
 
 $firstpage = new Page();
-$firstpage->article = 'new article';
-echo $firstpage->header = $header;
-echo $firstpage->color;
-echo $firstpage->changeColor(white);
-echo $firstpage->getArticle();
-echo $firstpage->footer = $footer;
+echo $a = $firstpage->getPage();
 ?>

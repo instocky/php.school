@@ -1,25 +1,6 @@
-<meta charset="utf-8">
 <?php
-// класс
-class Guestbook {
-  public $color;
-  public $composition;
-  public $record;
-
-  public function UserGuest()
-  {
-    echo 'просто функция';
-  }
-}
-$user1 = new Guestbook;
-$user2 = new Guestbook;
-$user3 = new Guestbook;
-// var_dump($user1);
-echo $user1->record = 'Хороший сайт ';
-echo $user2->record = 'Можно еще... ';
-echo $user3->record = 'Обязательно расскажу друзьям ';
-
-$user1->UserGuest();
+include __DIR__ . '/class.php';
+$rec = new Guestbook();
  ?>
  <!DOCTYPE html>
  <html>
@@ -30,7 +11,13 @@ $user1->UserGuest();
      <title></title>
    </head>
    <body>
-     <form class="" action="index.php" method="post">
+     <h1>Гостевая книга</h1>
+     <h2>Отзывы о сайте</h2>
+     <?php $rec->getData();
+           $rec->append();
+           $rec->outRecord();
+           $rec->save(); ?>
+     <form class="" action="index.php" method="POST">
        <textarea name="text" rows="8" cols="40"></textarea><br>
        <input type="submit" name="name" value="Отправить">
      </form>
