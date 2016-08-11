@@ -1,7 +1,8 @@
 implode //объединяет элементы массива в строку с разделителем(если нет разделителя он пустой) разделитель первый аргумент;
 http://php.net/manual/ru/function.implode.php
 
-explode // обратная implode = помещает строку в массив
+explode // обратная implode = помещает строку в массив (Возвращает массив строк, полученных разбиением строки)
+http://php.net/manual/ru/function.explode.php
 
 while // простейший цикл=выполняется пока условие истинно
 http://php.net/manual/ru/control-structures.while.php
@@ -19,7 +20,8 @@ http://php.net/manual/ru/function.file-get-contents.php
 file() // читает содержимое файла и помещает его в массив(каждая строка=элемент массива)
 http://php.net/manual/ru/function.file.php
 
-move_uploaded_file(ИМЯФАЙЛА, ПУТЬФАЙЛА)
+move_uploaded_file(ИМЯФАЙЛА, ПУТЬФАЙЛА) // перемещает загруженный файл на новое место
+// загрузка из временного хранилища на сервер // используется глобальный массив $_FILES
 http://php.net/manual/ru/function.move-uploaded-file.php
 
 header('location: /08/guestbook/index.php'); // направление на другую страницу
@@ -42,5 +44,6 @@ __consructor // магический метод выполняется при с
 simplexml_load_file // превращает xml файл в объект
 http://php.net/manual/ru/function.simplexml-load-file.php
 
-move_uploaded_file($_FILES['myimg']['tmp_name'],ПОЛНЫЙПУТЬНОВОЕИМЯНАСЕРВЕРЕ); // загрузка из временного хранилища на сервер
-http://php.net/manual/ru/function.move-uploaded-file.php
+preg_match(pattern subject) // Выполняет проверку на соответствие регулярному выражению
+Ищет в заданном тексте subject совпадения с шаблоном pattern
+http://php.net/manual/ru/function.preg-match.php

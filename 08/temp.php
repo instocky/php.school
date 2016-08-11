@@ -1,38 +1,47 @@
-<meta charset="utf-8">
 <?php
-include '/config/function.php';
-// $namefile = '../temp.txt';
-// recordComment('../temp.txt');
-$res = recComment('config/22');
-?>
+if($_POST['number'] == true) {
+  switch ($_POST['number']) {
+    case '1':
+      echo '1';
+      break;
 
-<!DOCTYPE html>
-<html>
-  <head>
-    <link href="style.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Гостевая книга</title>
-  </head>
-  <body>
-    <h1>Гостевая книга</h1>
+    case '2':
+      echo '2';
+      break;
 
-    <?php
-      $rec = file('config/22');
-      foreach ($rec as $value) {
-        echo $value . '<br>';
-      }
-      echo '<br>';
-      if($res == false){
-        echo 'Введите текст и нажмите кнопку отправить';
-      }else{
-        echo 'Запись добавлена';
-      }
-     ?>
+    case '3':
+      echo '3';
+      break;
 
-    <form class="" action="temp.php" method="post" style="margin-top: 20px">
-      <textarea name="comm"></textarea><br><br>
-      <input type="submit" name="name" value="Отправить">
-    </form>
-  </body>
-</html>
+    case '4':
+      echo '4';
+      break;
+
+    case '5':
+      echo '5';
+      break;
+
+
+    default:
+      echo 'введите число от 1 до 5';
+      break;
+  }
+  // var_dump($_POST);
+}
+
+ ?>
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <link href="style.css" rel="stylesheet">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+     <title></title>
+   </head>
+   <body>
+     <form class="" action="temp.php" method="post">
+       <input type="text" name="number" value="">
+       <input type="submit" name="name" value="Отправить">
+     </form>
+   </body>
+ </html>
