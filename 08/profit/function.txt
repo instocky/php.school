@@ -13,7 +13,7 @@ file_put_contents(ПУТЬКФАЙЛУ, $string, FILE_APPEND)
 // есть флаг FILE_APPEND просто дописывет в конец
 http://php.net/manual/ru/function.file-put-contents.php
 
-file_get_content() // получает содержимое файла(аргумент=ПУТЬКФАЙЛУ), если указать чужой адрес = получает страницу)
+file_get_contents() // получает содержимое файла(аргумент=ПУТЬКФАЙЛУ), если указать чужой адрес = получает страницу)
 получает как есть если есть перенос будет перенос
 http://php.net/manual/ru/function.file-get-contents.php
 
@@ -47,3 +47,22 @@ http://php.net/manual/ru/function.simplexml-load-file.php
 preg_match(pattern subject) // Выполняет проверку на соответствие регулярному выражению
 Ищет в заданном тексте subject совпадения с шаблоном pattern
 http://php.net/manual/ru/function.preg-match.php
+
+shuffle($array) // перемешивает массив true в случае успеха - иначе false
+http://php.net/manual/ru/function.shuffle.php
+
+array_rand($array, int=1) //  Выбирает одно или несколько случайных значений из массива - отдает массив
+http://php.net/manual/ru/function.array-rand.php
+
+array_combine($key, $value) // делает новый ассоциативный массив беря в качестве ключа значение из $key и в качестве значения из $value
+http://php.net/manual/ru/function.array-combine.php
+
+asort($arraey) // сортировка массива по возрастанию с сохранением ключа
+http://php.net/manual/ru/function.asort.php
+
+$array = []; // удаление массива
+
+strtotime(DATA)  // преобразует дату в UNIX формат дата должна быть в правильном формате 
+// input из form отдает в правильном
+http://php.net/manual/ru/function.strtotime.php
+http://php.net/manual/ru/datetime.formats.date.php

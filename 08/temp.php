@@ -1,47 +1,39 @@
 <?php
-if($_POST['number'] == true) {
-  switch ($_POST['number']) {
-    case '1':
-      echo '1';
-      break;
+// если работать с массивами, в отличии от функции rand, то можно сохранять результаты игры и выводить их в таблицу
+// $input = array(1, 2, 3, 4, 5, 6);
+// $number = array_rand($input, 2)
+// $input = array("Neo", "Morpheus", "Trinity", "Cypher", "Tank");
+// shuffle($input);
+// if ($input[0] == 'Trinity') {
+//   echo 'Trinity';
+// } else {
+//   echo 'Еще раз?';
+// }
 
-    case '2':
-      echo '2';
-      break;
+// второй вариант
+// $rand_keys = array_rand($input);
+// if ($input[$rand_keys] == 'Trinity') {
+//   echo 'Trinity';
+// } else {
+//   echo 'Еще раз?';
+// }
 
-    case '3':
-      echo '3';
-      break;
+?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Сыграем в кости</title>
+  </head>
+  <body>
+    <h2>Нажми F5</h2>
+    <div style="font-size: 40px; text"><b>
+      <!-- <?php echo $number[0] . ' : ' . $number[1]; ?> -->
+      <?php echo rand(1, 6) . ' : ' . rand(1, 6); ?>
+    </b>
+    </div>
 
-    case '4':
-      echo '4';
-      break;
-
-    case '5':
-      echo '5';
-      break;
-
-
-    default:
-      echo 'введите число от 1 до 5';
-      break;
-  }
-  // var_dump($_POST);
-}
-
- ?>
- <!DOCTYPE html>
- <html>
-   <head>
-     <link href="style.css" rel="stylesheet">
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-     <title></title>
-   </head>
-   <body>
-     <form class="" action="temp.php" method="post">
-       <input type="text" name="number" value="">
-       <input type="submit" name="name" value="Отправить">
-     </form>
-   </body>
- </html>
+  </body>
+</html>
